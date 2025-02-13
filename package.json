@@ -1,0 +1,28 @@
+{
+  "name": "js_hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lavanya0014/JS_Hackathon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lavanya0014/JS_Hackathon/issues"
+  },
+  "homepage": "https://github.com/lavanya0014/JS_Hackathon#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mathjs": "^14.2.1",
+    "openai": "^4.83.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
