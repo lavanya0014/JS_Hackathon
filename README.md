@@ -59,4 +59,5 @@ We developed an **AI Agent Framework in JavaScript**, enabling developers to bui
 - Add **epsilon-greedy** exploration strategy.
 - Introduce **persistent storage** for Q-tables.
 - Visualize agent performance with charts.
+- API and LLM
 
