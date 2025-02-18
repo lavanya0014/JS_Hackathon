@@ -19,6 +19,8 @@ We developed an **AI Agent Framework in JavaScript**, enabling developers to bui
 
 **Lavanya Singh (Multi-Agent Systems):**
 - Built multi-agent interaction protocols via **Socket.io**.
+- Helped Arpit Saini in his Framework Architecture & Core Modules work
+- Helped in debugging and writing code
 
 ### **Technologies & Tools:**
 - **JavaScript, Node.js** for backend logic.
