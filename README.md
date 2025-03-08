@@ -1,57 +1,99 @@
 ## Title: JavaScript Hackathon – AI Agent Framework
 
-### **Project Overview**
-We developed an **AI Agent Framework in JavaScript**, enabling developers to build intelligent agents with modular components for **decision-making and interaction**.
+This project simulates a simple environment with agents and a Q-learning agent. It demonstrates how agents can act in an environment and how a Q-learning agent can learn from its actions.
 
-#### **Key Features:**
-- **Modular Architecture:** Pre-built modules for decision-making algorithms.
-- **Reinforcement Learning:** Implements **Q-learning** for adaptive decision-making.
-- **Multi-Agent Systems:** Supports collaboration and competition via **Socket.io**.
+---
 
-### **Team Roles:**
-**Arpit Saini (Framework Architecture & Core Modules):**
-- Designed framework structure and core modules.
-- Integrated multi-agent communication with **Socket.io**.
+## **Project Structure**
+The project consists of the following components:
+1. **Agent Class**: Represents a basic agent that can act.
+2. **Environment Class**: Manages multiple agents and simulates their actions.
+3. **QLearningAgent Class**: Extends the `Agent` class to implement Q-learning functionality.
+4. **Main Script**: Initializes the environment, adds agents, and runs the simulation.
 
-**Prashant Gautam (Reinforcement Learning):**
-- Implemented **Q-Learning** for agent decision-making.
-- Developed agent learning modules using **JavaScript** and **Node.js**.
+---
 
-**Lavanya Singh (Multi-Agent Systems):**
-- Built multi-agent interaction protocols via **Socket.io**.
-- Helped Arpit Saini in his Framework Architecture & Core Modules work
-- Helped in debugging and writing code
+## **Code Overview**
 
-### **Technologies & Tools:**
-- **JavaScript, Node.js** for backend logic.
-- **Socket.io** for multi-agent communication.
+### **Agent Class**
+- **Purpose**: Represents a basic agent with a name and an `act()` method.
+- **Key Methods**:
+  - `constructor(name)`: Initializes the agent with a name.
+  - `act()`: Logs the agent's action to the console.
 
-#### **Q-Learning Highlights:**
-- **Q-Table:** Stores state-action values.
-- **Learning Formula:** Q(s,a) = Q(s,a) + α[r + γmaxQ(s’,a’) − Q(s,a)]
+### **Environment Class**
+- **Purpose**: Manages a collection of agents and simulates their actions.
+- **Key Methods**:
+  - `constructor()`: Initializes an empty list of agents.
+  - `addAgent(agent)`: Adds an agent to the environment.
+  - `simulate()`: Simulates actions for all agents in the environment.
 
-### **Setup Instructions:**
-1. **Install Node.js:** [Node.js Download](https://nodejs.org/)
-2. **Clone Repository:**
-    ```bash
-    git clone https://github.com/your-username/ai-agent-framework.git
-    cd ai-agent-framework
-    ```
-3. **Install Dependencies:**
-    ```bash
-    npm init -y
-    npm install
-    ```
-4. **Run Simulation:**
-    ```bash
-    node agent.js
-    ```
+### **QLearningAgent Class**
+- **Purpose**: Extends the `Agent` class to implement Q-learning.
+- **Key Methods**:
+  - `constructor(name)`: Initializes the Q-learning agent with a name and an empty Q-table.
+  - `learn(state, action, reward)`: Updates the Q-table based on the state, action, and reward.
 
-### **Challenges & Solutions:**
-- **Q-Learning Understanding:** Overcame confusion through examples and experimentation.
-- **Class Inheritance Issues:** Resolved by revisiting JavaScript OOP concepts.
+### **Main Script**
+- Initializes the environment and agents.
+- Simulates the environment.
+- Trains the Q-learning agent and logs the Q-table.
 
-### **Future Improvements:**
-- Add **epsilon-greedy** exploration strategy.
-- Introduce **persistent storage** for Q-tables.
-- API integration and LLM
+---
+
+## **How to Run**
+1. Ensure Node.js is installed on your system.
+2. Clone the repository.
+3. Run the following command in the terminal:
+   ```bash
+   node index.js
+   ```
+4. Check the console for output.
+
+---
+
+## **Team Task Allocation**
+
+### **Team Member 1: Agent Class**
+- Implement the `Agent` class.
+- Ensure the `act()` method logs the agent's action correctly.
+- Write unit tests for the `Agent` class.
+
+### **Team Member 2: Environment Class**
+- Implement the `Environment` class.
+- Ensure the `addAgent()` and `simulate()` methods work as expected.
+- Write unit tests for the `Environment` class.
+
+### **Team Member 3: QLearningAgent Class**
+- Implement the `QLearningAgent` class.
+- Ensure the `learn()` method updates the Q-table correctly.
+- Write unit tests for the `QLearningAgent` class.
+
+---
+
+## **Expected Output**
+When you run the script, you should see the following output in the console:
+```
+Simulating environment...
+Agent 1 is acting.
+Q-Agent is acting.
+
+Training Q-Agent...
+Q-Table: { 'state1-action1': 10 }
+```
+
+---
+
+## **Future Enhancements**
+1. Add more states and actions to the Q-learning agent.
+2. Implement a reward function for the environment.
+3. Visualize the Q-table using a chart or graph.
+
+---
+
+## **Contributors**
+- Arpit - Agent Class
+- Lavanya - Environment Class
+- Prashant  - QLearningAgent Class
+
+---
