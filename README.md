@@ -54,17 +54,17 @@ The project consists of the following components:
 
 ## **Team Task Allocation**
 
-### **Team Member 1: Agent Class**
+### **Team Member 1(Arpit): Agent Class**
 - Implement the `Agent` class.
 - Ensure the `act()` method logs the agent's action correctly.
 - Write unit tests for the `Agent` class.
 
-### **Team Member 2: Environment Class**
+### **Team Member 2(Lavanya): Environment Class**
 - Implement the `Environment` class.
 - Ensure the `addAgent()` and `simulate()` methods work as expected.
 - Write unit tests for the `Environment` class.
 
-### **Team Member 3: QLearningAgent Class**
+### **Team Member 3(Prashant): QLearningAgent Class**
 - Implement the `QLearningAgent` class.
 - Ensure the `learn()` method updates the Q-table correctly.
 - Write unit tests for the `QLearningAgent` class.
